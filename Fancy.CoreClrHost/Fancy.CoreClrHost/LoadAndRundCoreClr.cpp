@@ -16,8 +16,8 @@ bool LoadAndRunCoreClr(CoreClrStartParams* pCoreClrStartupParams)
 
 	if (!hCoreCLRModule)
 	{
-		printf_s("Could not load CoreCLR from path %S", pCoreClrStartupParams->CoreClrFilePath);
-		return 1;
+		printf_s("Could not load CoreCLR from path %S", pCoreClrStartupParams->CoreClrFilePath.c_str());
+		return false;
 	}
 
 	// Get the "factory" function for the runtime host
@@ -103,8 +103,8 @@ bool LoadAndRunCoreClr(CoreClrStartParams* pCoreClrStartupParams)
 
 	if (FAILED(hr))
 	{
-		wprintf_s(L"Full trusted assemblies: %S\n", pCoreClrStartupParams->FullTrustedAssembliePaths);
-		wprintf_s(L"AppPaths: %S\n", pCoreClrStartupParams->AppPaths);
+		wprintf_s(L"Full trusted assemblies: %S\n", pCoreClrStartupParams->FullTrustedAssembliePaths.c_str());
+		wprintf_s(L"AppPaths: %S\n", pCoreClrStartupParams->AppPaths.c_str());
 		printf_s("Failed to create app domain (%d).\n", hr);
 		return 1;
 	}

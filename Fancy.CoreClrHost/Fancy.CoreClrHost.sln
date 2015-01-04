@@ -8,7 +8,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{D25D5200-2C9E-4271-879E-846EEEA85EE3}"
 	ProjectSection(SolutionItems) = preProject
 		Fancy.CoreClrHost.nuspec = Fancy.CoreClrHost.nuspec
-		install.ps1 = install.ps1
 	EndProjectSection
 EndProject
 Global

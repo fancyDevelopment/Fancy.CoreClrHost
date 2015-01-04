@@ -8,7 +8,9 @@ int _tmain(int argc, _TCHAR* argv[])
 	CommandLineArgs commanLineArgs;
 	if (!ProcessCommandLine(argc, argv, &commanLineArgs))
 	{
-		printf_s("Could not process the command line args");
+		printf_s("Could not process the command line args.\n");
+		printf_s("Press any key to exit.\n");
+		getchar();
 		return 1;
 	}
 
@@ -17,12 +19,16 @@ int _tmain(int argc, _TCHAR* argv[])
 	if (!FillCoreClrStartParams(&commanLineArgs, &coreClrStartupParams))
 	{
 		printf_s("Could create the core clr startup params.\n");
+		printf_s("Press any key to exit.\n");
+		getchar();
 		return 1;
 	}
 
 	if (!LoadAndRunCoreClr(&coreClrStartupParams))
 	{
 		printf_s("Error on loading the core clr or running the managed code.\n");
+		printf_s("Press any key to exit.\n");
+		getchar();
 		return 1;
 	}
 

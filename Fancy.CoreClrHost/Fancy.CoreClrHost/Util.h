@@ -1,7 +1,7 @@
 #pragma once
 
 // Include common headers
-#include "Common.h";
+#include "Common.h"
 
 // Function to check the endig of a string
 bool HasEnding(wstring const &fullString, wstring const &ending);

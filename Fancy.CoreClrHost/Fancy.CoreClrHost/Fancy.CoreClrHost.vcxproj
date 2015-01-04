@@ -79,16 +79,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="CommandLineParser.cpp" />
+    <ClCompile Include="LoadAndRundCoreClr.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Util.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CommandLineParser.h" />
     <ClInclude Include="Common.h" />
+    <ClInclude Include="LoadAndRunCoreClr.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="Util.h" />
   </ItemGroup>

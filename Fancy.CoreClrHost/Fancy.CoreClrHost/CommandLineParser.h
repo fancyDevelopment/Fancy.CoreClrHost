@@ -1,7 +1,7 @@
 #pragma once
 
 // Include common headers
-#include "Common.h";
+#include "Common.h"
 
 // Struct to store the provided argument values from command line
 struct CommandLineArgs

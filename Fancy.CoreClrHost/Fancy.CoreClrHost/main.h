@@ -1,7 +1,11 @@
 #pragma once
 
 // Include common headers
-#include "Common.h";
+#include "Common.h"
 
-// Include application headers
-#include "Util.h"
+// Include required headers from application 
+#include "CommandLineParser.h"
+#include "LoadAndRunCoreClr.h"
+
+// Function to fill the "CoreClrStartParams" structure
+bool FillCoreClrStartParams(CommandLineArgs* pCommandLineArgs, CoreClrStartParams* pCoreClrStartParams);

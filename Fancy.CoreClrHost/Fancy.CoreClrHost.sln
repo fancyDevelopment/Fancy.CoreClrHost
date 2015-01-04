@@ -5,6 +5,12 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fancy.CoreClrHost", "Fancy.CoreClrHost\Fancy.CoreClrHost.vcxproj", "{F77310F0-04EF-4976-8299-9C9E491801F5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{D25D5200-2C9E-4271-879E-846EEEA85EE3}"
+	ProjectSection(SolutionItems) = preProject
+		Fancy.CoreClrHost.nuspec = Fancy.CoreClrHost.nuspec
+		install.ps1 = install.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32

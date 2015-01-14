@@ -2,8 +2,10 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Fancy.CoreClrHost</id>
-    <version>1.0.3</version>
+    <version>1.0.0</version>
+    <title>Fancy.CoreClrHost</title>
     <authors>Fancy Development - Daniel Murrmann</authors>
+    <projectUrl>https://github.com/fancyDevelopment/Fancy.CoreClrHost</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A lightweight host application to start .NET Core.</description>
   </metadata>

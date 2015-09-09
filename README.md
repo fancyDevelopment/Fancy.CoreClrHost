@@ -46,6 +46,9 @@ Fancy.CoreClrHost.exe --CoreClrFolderPath:C:\Dev\CoreClr\Runtime\x86\ --AppFolde
 - Currently all paths you provide need to be absolute path and need to end with a backslash.
 - Debugging with Visual Studio is possible but only if you attach the debugger when the application is already running. Directly starting the application from Visual Studio with the Debugger (F5) is currently not possible.
 
+## Requirements
+- If you load the NuGet Package and want to run the executeable you need to have the Visual Studio 2015 (v140) C++ Runtime installed on your machine
+
 ### More Information:
 To get some background you can also read my blog posts:
 

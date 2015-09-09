@@ -45,6 +45,7 @@ Fancy.CoreClrHost.exe --CoreClrFolderPath:C:\Dev\CoreClr\Runtime\x86\ --AppFolde
 ## Known Issues
 - Currently all paths you provide need to be absolute path and need to end with a backslash.
 - Debugging with Visual Studio is possible but only if you attach the debugger when the application is already running. Directly starting the application from Visual Studio with the Debugger (F5) is currently not possible.
+- Currently only the the CoreClr NuGet package from the Asp.NET vNext feed at myget.org is supported (the release Version of CoreClr at nuget.org has a different package structure). Support for the release version of CoreClr is not yet implemented. 
 
 ## Requirements
 - If you load the NuGet Package and want to run the executeable you need to have the Visual Studio 2015 (v140) C++ Runtime installed on your machine
